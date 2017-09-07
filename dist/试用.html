@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,target-densitydpi=device-dpi" />
+	<style>
+	    body,li,ul,p,h2{ margin: 0; padding: 0; }
+li{ list-style: none; }
+html{ font-family: '宋体' }
+a{ text-decoration: none; }
+
+.clear:after{ display:block;clear:both;content:"";visibility:hidden;height:0 }
+.claer{zoom: 1;}
+
+		 .promiandata{width: 94%; height: 6rem;  background: #fff;border-radius: 6px; margin-bottom: 0.6rem;position: relative; margin:0 auto; margin-top: 10rem;border: 1px solid #eac6c6;}
+		.promiandata-l1{ height: 2em; line-height: 2rem; padding-left: 0.3rem; }
+
+		.themore1{ position: absolute; left: 40%;  font-size: 0.65rem;  top: 0.5rem; height: 1rem;line-height:1rem; text-align: center; border-radius: 2px; border:1px solid #FC0A0E; width: 4.65rem; border:none;}
+		.logp{width: 4.65rem; height: 1rem;}
+		.lite{background: #FC0A0E; color: #FEF8F8;padding: 0 0.2rem;height: 1rem;display: inline-block;float: left;}
+		.litep{ font-style: normal; font-size: 0.8rem ;color: #FC0A0E;}
+		.themore{ padding: 0rem;font-style: normal;color: #FC0A0E; font-size: 1rem;}
+
+		.prprice{ font-size: 0.8rem;color: #FD9E57 ;}
+		.theprice{ font-size: 1.55rem;color: #F89509;padding-left: 0.2rem }
+
+		.promiandata-l2{height: 2rem; line-height: 1rem; padding-left: 0.3rem;}
+		.thecabin{ font-size: 0.7rem;color:#F89509 ;line-height: 2rem;}
+
+
+		.numticks{ height:2rem; font-size: 0.6rem;line-height: 2rem; color: #0F7DF7  }
+		.numticks em{ font-style:normal; }
+		.numticks  .prnum{ font-size:0.9rem;padding-right:0.1rem}
+		.numticks .prmove{ color: red; position: relative; top: -0.3rem; font-size: 0.8rem; display: inline-block;}
+		.promiandata-l3{ display: inline-block; width: 3.2rem; height:1.6rem; }
+		.promiandata-l4{position: absolute; width: 3.2rem; height: 1.6rem; background: #ff9e36; right: 0.4rem; top: 1.7rem;border-radius: 4px; color: #fff; text-align: center;line-height: 1.6rem;font-size: 0.85rem;}
+		.thediscount{position: absolute;top:1.7rem;height: 1rem; font-size: 0.6rem;line-height: 1rem;color: #826363; width: 100%;text-align: center;left: 0}
+		.promiandata-l5{height: 2rem; padding-left: 0.3rem; }
+		.changepage{font-size: 0.6rem;line-height: 2rem; color: #0F7DF7; font-family:"Times New Roman",Georgia,Serif;}
+		.xhcredit{ font-size: 0.5rem;line-height: 2rem; color: #ad5b5b; }
+		.fmoret{ font-size: 0.5rem; width: 3.2rem; height: 1.2rem; display: block; float: right; line-height: 1.2rem ;margin-top: 0.4rem;margin-right: 0.4rem;position: relative;color:#6f6868;}
+		.fmore{ width: 0.8rem; height: 0.8rem;position: absolute; top: 0.3rem;right: -0.1em }
+	</style>
+	<script type="text/javascript">
+      document.getElementsByTagName('html')[0].style.fontSize = '20px';
+  </script>
+</head>
+<body>
+  <ul class="promiandata">
+      <li class="promiandata-l1">
+           <span class="prprice">¥<strong class="theprice">800</strong></span>
+          <!--  <span class="themore1"><span class="lite">红包立减</span><em class="litep">¥</em><em class="themore">30</em></span> -->
+          <span class="themore1"><img class="logp" src="zy_3U.png" alt=""></span>
+      </li>
+      <li class="promiandata-l2">
+           <strong class="thecabin">经济舱</strong>
+           <span class="numticks"><em class="onlybn" style="display: none;">仅</em><em class="prnum">9</em>张<em class="prmove prmove1">+</em></span>
+      </li>
+      <li class=" promiandata-l4" >
+          <span class="promiandata-l3" proprice="800" seachprice="E" cabintype="3" insuretype="7" zytypep="1" istrippok="1" hbjine="30" hashongbao="false" zhpolicyid="1" cabindesc="" sequencenumber="">预订</span>
+          <span class="thediscount">4.9折</span>
+       </li>
+       <li class="promiandata-l5">
+       	   <span class="changepage" data="E" prprice="800" cabinlevel="经济舱">退改签规定</span>
+       	   <span class="xhcredit ">无差旅月结,无保险,无配送</span>
+       	   <span class="fmoret">更多航班<img class="fmore" src="img/botom.png" alt=""></span>
+
+       </li>
+  </ul>
+<script>
+//取Cookie的值
+function GetCookie(name) {
+    var arg = name + "=";
+    var alen = arg.length;
+    var clen = document.cookie.length;
+    var i = 0;
+    while (i < clen) {
+        var j = i + alen;
+        if (document.cookie.substring(i, j) == arg) return getCookieVal(j);
+        i = document.cookie.indexOf(" ", i) + 1;
+        if (i == 0) break;
+    }
+    return null;
+}
+ //写入到Cookie
+//name:cookie名称  value:cookie值
+function SetCookie(name, value,t) {
+    var Days = 30;
+    var exp = new Date();
+    exp.setTime(exp.getTime() + 60000 *t);//过期时间 2分钟
+    document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+}
+
+function getCookieVal(offset) {
+    var endstr = document.cookie.indexOf(";", offset);
+    if (endstr == -1) endstr = document.cookie.length;
+    return unescape(document.cookie.substring(offset, endstr));
+}
+SetCookie('xh0',1,1)
+var timer = setInterval(function(){
+    console.log('600毫秒后再次修改时间长'+GetCookie('xh0'))
+
+   },200)
+//var  timer2 = setTimeout(function(){
+//    SetCookie('xh0',1,1)
+//    console.log('600毫秒开始计算时长'+GetCookie('xh0'))
+//},6000)
+</script>
+</body>
+</html>

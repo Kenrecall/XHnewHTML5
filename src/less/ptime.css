@@ -1,0 +1,136 @@
+#date{
+   width: 100%;
+   height: 100%;
+}
+#date-t{
+   width: 100%;
+   height: 2rem;
+   background: #cc0000;
+   position: fixed;
+   top: 0;
+}
+#dateBack{
+  line-height: 2.2rem;
+  color: #fff;
+  display: inline-block;
+  width: 4rem;
+  height: 2.2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+#date-m{
+    position:fixed;
+    top: 2rem;
+    height: 100%;
+    overflow: scroll;
+    background: #cc0000
+}
+#date-m1{
+    background: #cc0000;
+    padding-bottom: 2.2rem
+}
+
+#calendarBox
+    {
+        width:100%;
+        margin:0 auto;
+
+    }
+
+
+    .calendar {
+
+        margin-bottom:5px;
+        border:1px solid #ccc;
+        background:#fff;
+    }
+
+    .calendar_t_prev {
+        width: 30px;
+        line-height: 30px;
+        float: left;
+        background: #fff;
+        cursor: pointer;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .calendar_t_day {
+        line-height: 30px;
+        text-align: center;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+
+    .calendar_t_next {
+        width: 30px;
+        line-height: 30px;
+        float: right;
+        background: #fff;
+        cursor: pointer;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .calendar_c_week_day {
+        width: 13.5%;
+        overflow: hidden;
+        border: 1px solid #fff;
+        float: left;
+        text-align: center;
+        font-family: '微软雅黑';
+        font-size: 15px;
+    }
+
+    .calendar_c {
+        width: 95%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .day {
+        width: 14%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #f1f1f1;
+        float: left;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .dayWhite {
+        color: #ffffff;
+        border-color: #ffffff;
+        cursor: default;
+    }
+
+    .dayGrey {
+        color: #ccc;
+        border-color: #f9f9f9;
+    }
+
+    .dayRed {
+        color: #ffffff;
+        border-color: #cc0000;
+        background-color: #cc0000;
+    }
+
+    .dayBlack {
+        color: #000000;
+        border-color: #000000;
+    }
+    .daySelect {
+        color: #ffffff;
+        border-color: #cc0000;
+        background-color: #cc0000;
+    }
+    .dayNow {
+        font-weight:bold;
+        color:#ff0000;
+    }

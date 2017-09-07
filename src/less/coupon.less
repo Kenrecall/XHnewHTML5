@@ -1,0 +1,193 @@
+// 变量
+@import "variables.less";
+// 图标网格
+@import "mixins.less";
+
+/*海报*/
+
+.poster {
+  background-color: white;
+  span {
+    display: block;
+    margin-top: 10px;
+    color: #4b4b4b;
+    font-size: .7rem;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+/*============================砸蛋*/
+
+.zadan{
+  background: url(http://nydl-10038118.cos.myqcloud.com/img/lottery/zd_cion02.png) no-repeat left top;
+  background-size: cover;
+  width: 100%;
+  /*
+  height: 100vh;
+  min-height: 1690px;
+  */
+
+  .zd_logo {
+    padding-top: 5px;
+    /*margin-bottom: 30px;*/
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+    }
+  }
+
+  .zd_middle {
+    padding-top: 10px;
+    .zd_title{
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+      }
+    }
+
+    .zd_zadan{
+      background: url(http://nydl-10038118.cos.myqcloud.com/img/lottery/zd_cion17.png) no-repeat center bottom;
+      background-size: 16.29rem 14.766rem;
+      width: 16.29rem;
+      height: 24.6rem;
+      margin: 0 auto;
+      margin-top: -5rem; //-140px;
+      position: relative;
+      overflow: hidden;
+
+      .zd_jindan{
+        position: absolute;
+        top: 5.74rem;
+        left: 1.46rem;
+        width: 14.15rem;
+        height: 9.96rem;
+        img {
+          width: 100%;
+        }
+      }
+
+      .zd_jindan01{
+        -webkit-animation: zd_jindan01 0.05s  infinite ;
+        animation: zd_jindan01 0.05s infinite ;
+        animation-direction: alternate;
+        -webkit-animation-direction: alternate;
+      }
+
+      .zd_txt {
+        width: 13.6rem;
+        margin: 0 auto;
+        padding-top: 16.4rem;
+        /*margin-left: 18px;*/
+
+        input {
+          color: #4b4b4b;
+          display: inline-block; //block;
+          width: 10rem; // 13.6rem;
+          height: 2rem;
+          line-height: 2rem;
+          margin: 0 auto;
+          font-size: .9rem;
+          font-weight: bold;
+          border-radius: 10px;
+          border:1px solid #c1c1c1;
+          padding-left: 10px;
+          box-sizing: border-box;
+          margin-bottom: 10px;
+        }
+
+        a {
+          display: block;
+          width: 13.6rem;
+          height: 2rem;
+          line-height: 2rem;
+          margin: 0 auto;
+          font-size: .9rem;
+          font-weight: bold;
+          border-radius: 10px;
+          text-align: center;
+          color: red;
+          background: url(http://nydl-10038118.cos.myqcloud.com/img/lottery/zd_cion07.png) no-repeat left top;
+          background-size: cover;
+        }
+
+        .start {
+          color: red;
+        }
+      }
+    }
+  }
+
+  .zd_bottom {
+    padding-top: 20px;
+
+    .item-title {
+      white-space: normal;
+      overflow: auto;
+      font-size: .75rem;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      // height: 4rem;
+    }
+    /*
+    .ruleTitle {
+      position: relative;
+      top: -40px;
+      display: block;
+      // width: 90%;
+      margin: 0 auto;
+      width: 13.6rem;
+      // height: 4rem;
+      line-height: 2rem;
+      font-size: .9rem;
+      font-weight: bold;
+      // border-radius: 10px;
+      text-align: center;
+      color: red;
+      //background: url(http://nydl-10038118.cos.myqcloud.com/img/mutual/1/ruleTitle.png) no-repeat left top;
+      //background-size: //cover;
+    }
+    */
+
+    .list {
+      background-color: inherit;
+      margin: 0;
+      padding: 0 30px 0 10px;
+      ul {
+        background-color: inherit;
+        .hairline-remove(top);
+        .hairline-remove(bottom);
+        color: white
+      }
+    }
+  }
+}
+
+.zhongliang .zd_txt .mom_4g{
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+}
+
+@keyframes zd_jindan01
+{
+  0% {
+    transform: rotate(5deg);
+  }
+  /*50% {
+      transform: rotate(5deg);
+  }*/
+  100% {
+    transform: rotate(0deg);
+  }
+}
+

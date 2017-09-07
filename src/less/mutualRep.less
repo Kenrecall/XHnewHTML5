@@ -1,0 +1,134 @@
+// 变量
+@import "variables.less";
+// 图标网格
+@import "mixins.less";
+
+/*等待条*/
+
+#loading {
+  width: 100%;
+  height: 100%;
+  background: url(http://nydl-10038118.cos.myqcloud.com/img/wsload.gif) no-repeat center center #FFF;
+  background-size: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+/*==============================================================浮层内容*/
+
+#tip {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 9999;
+}
+
+#tip .pack {
+  width: 80%;
+  /*min-height: 100px;*/
+  margin: 0 auto;
+  background: #FFF;
+  margin-top: 30%;
+  position: relative;
+  overflow: hidden;
+}
+#tip .pack p {
+  font-size: 18px;
+  text-align: center;
+  color: #666666;
+  line-height: 36px;
+  margin-top: 20px;
+
+}
+#tip .pack h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #666666;
+  line-height: 36px;
+  margin-top: 20px;
+
+}
+#tip .pack a {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  font-size: 16px;
+  color: #c8161d;
+  height:40px;
+  line-height: 40px;
+  text-align: center;
+  border-top: 1px solid #d6d6d6;
+}
+
+/*弹出框增加*/
+#tip .pack_yl{
+  min-height:200px;
+  margin-top: 45%;
+  border-radius: 10px;
+}
+
+#tip .pack_yl p {
+  font-size: 26px;
+  margin-top:30px;
+  margin-bottom:65px;
+  padding: 0 5%;
+}
+
+
+#tip .pack_yl a {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  font-size: 26px;
+}
+#tip .pack_yl a img{
+  display: block;
+  width: 53px;
+  line-height: 53px;
+  margin: 0 auto;
+}
+
+
+/*============================砸蛋*/
+
+.zadan{
+  background: url(http://nydl-10038118.cos.myqcloud.com/img/lottery/zd_cion02.png) no-repeat left top;
+  background-size: cover;
+  width: 100%;
+  /*
+  height: 100vh;
+  min-height: 1690px;
+  */
+  .zd_bottom {
+    padding-top: 20px;
+    img {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      // height: 4rem;
+    }
+
+    .list {
+      background-color: inherit;
+      margin: 0;
+      padding: 0 30px 0 10px;
+      ul {
+        background-color: inherit;
+        .hairline-remove(top);
+        .hairline-remove(bottom);
+        color: white
+      }
+      .item-title.label {
+        width: 70%;
+      }
+    }
+  }
+}
